@@ -7,6 +7,10 @@ using namespace std;
 
 int nv;
 vector<int> g[200009];
+// dpi - max no of edges in a matching of subtree
+//       rooted at i, such that vertex i is matched
+// dpe - max no of edges in a matching of subtree
+// 	rooted at i, such that vertex i is not matched
 int dpi[200009], dpe[200009];
 
 void dfs(int v, int p)
